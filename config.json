@@ -1,0 +1,137 @@
+{
+	"input": {
+		"ranger_districts_geo_json": "data-files/Ranger_District_Boundaries_(Feature_Layer).geojson",
+		"pdfs": [
+			{
+				"title": "ARP Boulder North",
+				"id": "arp-boulder-north",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd522665.pdf",
+				"mvum_md5": "30c494f8908b6fa65334710f288f3ec3",
+				"mvum_mask_geojson": "data-files/arp-boulder-north.geojson",
+				"ranger_district_id": "99021001010343"
+	        },
+			{
+				"title": "ARP Boulder South",
+				"id": "arp-boulder-south",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd530033.pdf",
+				"mvum_md5": "996cc4d57ab2953196d784544840a324",
+				"mvum_mask_geojson": "data-files/arp-boulder-south.geojson",
+				"ranger_district_id": "99021001010343"
+	        },
+			{
+				"title": "ARP Clear Creek",
+				"id": "arp-clear-creek",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd570785.pdf",
+				"mvum_md5": "b0e91599bad08b8a0d5fc67cd782332b",
+				"mvum_mask_geojson": "data-files/arp-clear-creek.geojson",
+				"ranger_district_id": "99021007010343"
+	        },
+			{
+				"title": "ARP Pawnee East",
+				"id": "arp-pawnee-east",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5307750.pdf",
+				"mvum_md5": "2931e0e60c237ecddea232df8899a5ae",
+				"mvum_mask_geojson": "data-files/arp-pawnee-east.geojson",
+				"ranger_district_id": "99021006010343"
+	        },
+			{
+				"title": "ARP Pawnee West",
+				"id": "arp-pawnee-west",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5307749.pdf",
+				"mvum_md5": "64406b0f925ea2e67180599059dad59b",
+				"mvum_mask_geojson": "data-files/arp-pawnee-west.geojson",
+				"ranger_district_id": "99021006010343"
+	        },
+			{
+				"title": "ARP Sulphur North",
+				"id": "arp-sulphur-north",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5339604.pdf",
+				"mvum_md5": "83beacf6ebd75a58fa0a8b616d8af021",
+				"mvum_mask_geojson": "data-files/arp-sulphur-north.geojson",
+				"ranger_district_id": "99021008010343"
+	        },
+			{
+				"title": "ARP Sulphur South",
+				"id": "arp-sulphur-south",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5339603.pdf",
+				"mvum_md5": "14355ea043929fa996a0cc2f0bb1ecc3",
+				"mvum_mask_geojson": "data-files/arp-sulphur-south.geojson",
+				"ranger_district_id": "99021008010343"
+	        },
+			{
+				"title": "GMUG Grand Mesa",
+				"id": "gmug-grand-mesa",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1071681.pdf",
+				"mvum_md5": "9c8e903729899df3c8bfb5561760a8eb",
+				"mvum_mask_geojson": "data-files/gmug-grand-mesa.geojson",
+				"ranger_district_id": "99020402010343"
+	        },
+			{
+				"title": "GMUG Uncompahgre Plateau / Grand Valley",
+				"id": "gmug-uncompahgre-plateau-grand-valley",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511370.pdf",
+				"mvum_md5": "0ea9bd70b1bee8b56b3f8eb305904fe5",
+				"mvum_mask_geojson": "data-files/gmug-plateau.geojson",
+				"ranger_district_id": "99020402010343"
+	        },
+			{
+				"title": "GMUG Uncompahgre Plateau / Norwood",
+				"id": "gmug-uncompahgre-plateau-norwood",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511370.pdf",
+				"mvum_md5": "0ea9bd70b1bee8b56b3f8eb305904fe5",
+				"mvum_mask_geojson": "data-files/gmug-plateau.geojson",
+				"ranger_district_id": "99020405010343"
+	        },
+			{
+				"title": "GMUG Uncompahgre Mountain / Norwood",
+				"id": "gmug-uncompahgre-mtn-norwood",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511371.pdf",
+				"mvum_md5": "ef633922b671303f6b51d9215ebdd7fa",
+				"mvum_mask_geojson": "data-files/gmug-uncompahgre-mtn.geojson",
+				"ranger_district_id": "99020405010343"
+	        },
+			{
+				"title": "GMUG Uncompahgre Mountain / Ouray",
+				"id": "gmug-uncompahgre-mtn-ouray",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511371.pdf",
+				"mvum_md5": "ef633922b671303f6b51d9215ebdd7fa",
+				"mvum_mask_geojson": "data-files/gmug-uncompahgre-mtn.geojson",
+				"ranger_district_id": "99020406010343"
+	        },
+			{
+				"title": "GMUG Uncompahgre Mountain / Gunnison",
+				"id": "gmug-uncompahgre-mtn-gunnison",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511371.pdf",
+				"mvum_md5": "ef633922b671303f6b51d9215ebdd7fa",
+				"mvum_mask_geojson": "data-files/gmug-uncompahgre-mtn.geojson",
+				"ranger_district_id": "99020407010343"
+	        },
+			{
+				"title": "GMUG Paonia",
+				"id": "gmug-paonia",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3838524.pdf",
+				"mvum_md5": "f07b5a06669e912e979f26e19a3b4c39",
+				"mvum_mask_geojson": "data-files/gmug-paonia.geojson",
+				"ranger_district_id": "99020408010343"
+	        },
+			{
+				"title": "GMUG Gunnison North",
+				"id": "gmug-gunnison-north",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd658615.pdf",
+				"mvum_md5": "e79e72d851471ef7145bf377957b2d3f",
+				"mvum_mask_geojson": "data-files/gmug-gunnison-north.geojson",
+				"ranger_district_id": "99020407010343"
+	        },
+			{
+				"title": "GMUG Gunnison South",
+				"id": "gmug-gunnison-south",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd658618.pdf",
+				"mvum_md5": "dda154e320f980b0db8508b21cdd31ba",
+				"mvum_mask_geojson": "data-files/gmug-gunnison-south.geojson",
+				"ranger_district_id": "99020407010343"
+	        }
+	    ]},
+	"output": {
+		"cache_folder": "cache"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"input": {
+		"ranger_districts_geo_json": "data-files/Ranger_District_Boundaries_(Feature_Layer).geojson",
+		"pdfs": [
+	    ]},
+	"output": {
+		"cache_folder": "cache"
+	}
+}
