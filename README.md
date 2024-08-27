@@ -23,29 +23,6 @@ These maps are base layer maps, not vector maps. You can set the transparency to
 Included Forests
 
 * Colorado's ARP Arapaho and Roosevelt National Forests and Pawnee National Grassland
-  * Except Canyon Lakes district which has an issue with the USFS provided Ranger District outline
-
-<!--
-  Warning 1: Ring Self-intersection at or near point -105.68590417511045 40.971393137526597
-  ERROR 1: Cutline polygon is invalid.
-  {
-	"title": "ARP Canyon Lakes North",
-	"id": "arp-canyon-lakes-north",
-	"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165781.pdf",
-	"mvum_md5": "bb4929a94faf4b9e3bfc98545bf106c5",
-	"mvum_mask_geojson": "data-files/arp-canyonlakes-north.geojson",
-	"ranger_district_id": "99021005010343"
-  },
-  {
-	"title": "ARP Canyon Lakes South",
-	"id": "arp-canyon-lakes-south",
-	"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165761.pdf",
-	"mvum_md5": "b9f55adbfc665ce4df1bbedc83c0a04a",
-	"mvum_mask_geojson": "data-files/arp-canyonlakes-south.geojson",
-	"ranger_district_id": "99021005010343"
-  }
-  -->
-
 * Colorado's GMUG Grand Mesa, Uncompahgre and Gunnison National Forests
 
 Excluded Forests

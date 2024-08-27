@@ -18,6 +18,22 @@
 				"mvum_mask_geojson": "data-files/arp-boulder-south.geojson",
 				"ranger_district_id": "99021001010343"
 	        },
+		    {
+				"title": "ARP Canyon Lakes North",
+				"id": "arp-canyon-lakes-north",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165781.pdf",
+				"mvum_md5": "bb4929a94faf4b9e3bfc98545bf106c5",
+				"mvum_mask_geojson": "data-files/arp-canyonlakes-north.geojson",
+				"ranger_district_id": "99021005010343"
+		    },
+		    {
+				"title": "ARP Canyon Lakes South",
+				"id": "arp-canyon-lakes-south",
+				"mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165761.pdf",
+				"mvum_md5": "b9f55adbfc665ce4df1bbedc83c0a04a",
+				"mvum_mask_geojson": "data-files/arp-canyonlakes-south.geojson",
+				"ranger_district_id": "99021005010343"
+		    },
 			{
 				"title": "ARP Clear Creek",
 				"id": "arp-clear-creek",

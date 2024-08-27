@@ -22,6 +22,17 @@ tiles_folder_name = "tiles"
 if os.path.isdir(tiles_folder_name):
     shutil.rmtree(tiles_folder_name)
 
+# fix ranger geometry, and create indexed-sqlite storage
+ranger_db_filename = os.path.join(cache_dir, "ranger_districts.sqlite")
+if os.path.isfile(ranger_db_filename):
+    os.remove(ranger_db_filename)
+subprocess.run(
+    ["ogr2ogr", "-makevalid", "-of", "sqlite", ranger_db_filename, ranger_districts_filename],
+    check=True)
+subprocess.run(
+    ["sqlite3", ranger_db_filename, "CREATE INDEX IF NOT EXISTS idx_rangerdistrictid ON `ranger_district_boundaries_(feature_layer)` (rangerdistrictid);", ".exit"],
+    check=True)
+
 seen_ids = set([])
 files_to_merge = []
 for i in data["input"]["pdfs"]:
@@ -74,7 +85,7 @@ for i in data["input"]["pdfs"]:
         "gdalwarp", "-dstalpha", "-overwrite", "-of", "GTiff",
         # for smaller files that vrt references
         "-co", "COMPRESS=DEFLATE", "-co", "PREDICTOR=2", "-co", "ZLEVEL=9",
-        "-crop_to_cutline", "-cutline", ranger_districts_filename,
+        "-crop_to_cutline", "-cutline", ranger_db_filename,
         "-wo", "NUM_THREADS=ALL_CPUS",
         "-cwhere", cwhere,
         mvum_mask_filename,
@@ -100,7 +111,7 @@ subprocess.run([
     "gdal2tiles",
     "-z", "8-14",
     "--exclude",
-    "--processes", "4", # TODO determine processor count?
+    "--processes", "8", # TODO determine processor count?
     "--xyz",
     "-w", "leaflet",
     mosaic_file_name,
