@@ -59,6 +59,7 @@ See Generating Tiles section below for testing.
 ## Generating Tiles
 
 0. Make sure dependencies are present (e.g. gdal with python bindings available on PATH, python libraries). (TODO document dependencies and/or provide consistent environment)
+   - sqlite, gdal, etc
 0. Make sure you have the ranger district boundaries (currently using geojson from <https://data-usfs.hub.arcgis.com/datasets/usfs::ranger-district-boundaries-feature-layer/about>) and updated config.json with the path (e.g. `data-files/Ranger_District_Boundaries_(Feature_Layer).geojson`) (file is too big for github)
 0. Make sure the cache folder has all PDFs that config file references (filename is `${md5hash}.pdf`) (TODO make `requests` or something else work).
 0. For final files, run `GDAL_PDF_DPI=200 python3 process.py -c config.json`. For testing, consider reducing GDAL_PDF_DPI value. For testing, consider using a smaller config.json file. For example, 1-2 existing input files, plus whatever is being added.

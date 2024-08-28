@@ -6,8 +6,8 @@ import shutil
 import subprocess
 
 
-parser = argparse.ArgumentParser("find_ranger")
-parser.add_argument("-c", help="Path to config file", type=str)
+parser = argparse.ArgumentParser("process")
+parser.add_argument("-c", help="Path to config file", type=str, default="config.json")
 args = parser.parse_args()
 
 f = open(args.c)
@@ -79,20 +79,21 @@ for i in data["input"]["pdfs"]:
     # apply ranger district mask
     # gdalwarp -dstalpha -overwrite -of GTiff -crop_to_cutline -cutline "data-files/Ranger_District_Boundaries_(Feature_Layer).geojson" -cwhere "RANGERDISTRICTID = '99021001010343'" cache/30c494f8908b6fa65334710f288f3ec3.tif output.tif
     # TODO check cli options
-    ranger_mask_filename = os.path.join(cache_dir, i["id"] + "-ranger-masked" + ".tif")
-    cwhere = 'RANGERDISTRICTID = \'' + i["ranger_district_id"] + '\''
-    subprocess.run([
-        "gdalwarp", "-dstalpha", "-overwrite", "-of", "GTiff",
-        # for smaller files that vrt references
-        "-co", "COMPRESS=DEFLATE", "-co", "PREDICTOR=2", "-co", "ZLEVEL=9",
-        "-crop_to_cutline", "-cutline", ranger_db_filename,
-        "-wo", "NUM_THREADS=ALL_CPUS",
-        "-cwhere", cwhere,
-        mvum_mask_filename,
-        ranger_mask_filename
-        ], check=True)
+    for ranger_idx, ranger_id in enumerate(i["ranger_district_ids"]):
+        ranger_mask_filename = os.path.join(cache_dir, i["id"] + "-ranger-masked-" + str(ranger_idx) + ".tif")
+        cwhere = "RANGERDISTRICTID = '" + ranger_id + "'"
+        subprocess.run([
+            "gdalwarp", "-dstalpha", "-overwrite", "-of", "GTiff",
+            # for smaller files that vrt references
+            "-co", "COMPRESS=DEFLATE", "-co", "PREDICTOR=2", "-co", "ZLEVEL=9",
+            "-crop_to_cutline", "-cutline", ranger_db_filename,
+            "-wo", "NUM_THREADS=ALL_CPUS",
+            "-cwhere", cwhere,
+            mvum_mask_filename,
+            ranger_mask_filename
+            ], check=True)
 
-    files_to_merge.append(ranger_mask_filename)
+        files_to_merge.append(ranger_mask_filename)
 
 # merge stuff together
 print("merging: ", files_to_merge)

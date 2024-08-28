@@ -12,7 +12,15 @@ Possible future improvements
 
 - pass `GDAL_PDF_DPI=200` in process.py, instead of invocation environment variable
 - test allowing multiple ranger districts per input file (at least GMUG has PDFs spanning multiple ranger districts)
-- allow custom ranger district boundaries (at least ARP Canyon Lakes is invalid to gdal)
+  - this requires more work
+  - I tried naively passing multiple ranger districts in the cutline where clause
+  - I got many `TopologyException: side location conflict` errors during cut line application
+  - applying cut lines separately did not generate such errors
+  - but simplify config file, and loop over list for generation
+- make finding ranger districts for each file easier
+  - can create spatialite ranger districts db passing `-dsco SPATIALITE=YES` to creation command
+  - maybe render a custom leaflet to see relevant districts?
+- make etags work
 - parallelize input file processing
 
 References
