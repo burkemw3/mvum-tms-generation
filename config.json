@@ -121,6 +121,54 @@
                 "mvum_md5": "dda154e320f980b0db8508b21cdd31ba",
                 "mvum_mask_geojson": "data-files/gmug-gunnison-south.geojson",
                 "ranger_district_ids": ["99020407010343"]
+            },
+            {
+                "title": "White River Aspen",
+                "id": "whiteriver-aspen",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025145.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-aspen.geojson",
+                "ranger_district_ids": ["99021501010343"],
+                "mvum_md5": "a24c8c183abc9edb2e7ee830aca71093"
+            },
+            {
+                "title": "White River Dillon",
+                "id": "whiteriver-dillon",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025146.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-dillon.geojson",
+                "ranger_district_ids": ["99021510010343"],
+                "mvum_md5": "757a4efc69988b49e2d59b3daacc6a82"
+            },
+            {
+                "title": "White River Eagle Holy Cross front",
+                "id": "whiteriver-eagle-front",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025153.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-eagle-front.geojson",
+                "ranger_district_ids": ["99021507010343", "99021504010343"],
+                "mvum_md5": "ff73859eff067c4f413ce6589d4459ab"
+            },
+            {
+                "title": "White River Eagle Holy Cross back",
+                "id": "whiteriver-eagle-back",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025147.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-eagle-back.geojson",
+                "ranger_district_ids": ["99021504010343", "99021507010343"],
+                "mvum_md5": "807de43245378637b75218ff6c40ad84"
+            },
+            {
+                "title": "White River Flat Tops front",
+                "id": "whiteriver-flattops-front",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025157.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-flattops-front.geojson",
+                "ranger_district_ids": ["99021504010343", "99021508010343", "99021502010343"],
+                "mvum_md5": "a97bee2f205ec7d3362b68a17850c8ce"
+            },
+            {
+                "title": "White River Rifle",
+                "id": "whiteriver-rifle",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025158.pdf",
+                "mvum_mask_geojson": "data-files/whiteriver-rifle.geojson",
+                "ranger_district_ids": ["99021508010343"],
+                "mvum_md5": "5a8a6ac0b57eb3e5b35e1d6c8ca823dc"
             }
         ]
     },

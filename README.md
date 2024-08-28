@@ -24,6 +24,7 @@ Included Forests
 
 * Colorado's ARP Arapaho and Roosevelt National Forests and Pawnee National Grassland
 * Colorado's GMUG Grand Mesa, Uncompahgre and Gunnison National Forests
+* Colorado's WHITERIVER White River National Forest
 
 Excluded Forests
 
