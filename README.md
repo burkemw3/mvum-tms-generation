@@ -49,11 +49,13 @@ Other forests need to be investigated and added or excluded.
 0. Download the USFS pdf file.
 0. Use something like `md5` command-line tool to determine the PDF's md5 sum
 0. Use a tool like QGIS to generate an geojson file with a polygon that covers the map area on the PDF. Exclude legend selections. The polygon may include areas that are not in the ranger distrcit (those should be filtered out by the ranger district lines). Ensure the file has a CRS defined. Example QGIS steps
-   0. Load the PDF as a raster layer
-   0. Create a temporary scratch layer, with Polygon geometry type, and same CRS as PDF. Make sure CRS has EPSG prefix.
-   0. Draw a polygon to cover the map area
-   0. Right click on temporary layer > Export > Save Feature As ...
-   0. Use GeoJSON format, a consistent filename (in the data-files directory), and make sure CRS is selected (with EPSG prefix).
+   
+   1. Load the PDF as a raster layer
+   2. Create a temporary scratch layer, with Polygon geometry type, and same CRS as PDF. Make sure CRS has EPSG prefix.
+   3. Draw a polygon to cover the map area
+   4. Right click on temporary layer > Export > Save Feature As ...
+   5. Use GeoJSON format, a consistent filename (in the data-files directory), and make sure CRS is selected (with EPSG prefix).
+   
 0. To find the ranger district id use `python3 find_ranger.py --rdb data-files/Ranger_District_Boundaries_\(Feature_Layer\).geojson --q "search_term"` to search for the ranger district of the PDF.
 
 See Generating Tiles section below for testing.
