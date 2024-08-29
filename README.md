@@ -30,6 +30,7 @@ Included Forests
 Excluded Forests
 
 * Colorado's Pike-San Isabel National Forests & Cimarron and Comanche National Grasslands (PSICC) does not include dispersed camping designations on their MVUMs. This dataset does not PSICC forest.
+* Fish Lake National Forest (Utah) does not inclued dispersed camping designations. Currently, "Camping is allowed throughout the Forest, unless otherwise noted by Special Order". It is excluded from the map.
 
 Other forests need to be investigated and added or excluded.
 
