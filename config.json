@@ -8,7 +8,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd522665.pdf",
                 "mvum_md5": "30c494f8908b6fa65334710f288f3ec3",
                 "mvum_mask_geojson": "data-files/arp-boulder-north.geojson",
-                "ranger_district_ids": ["99021001010343"]
+                "ranger_district_ids": [
+                    "99021001010343"
+                ]
             },
             {
                 "title": "ARP Boulder South",
@@ -16,7 +18,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd530033.pdf",
                 "mvum_md5": "996cc4d57ab2953196d784544840a324",
                 "mvum_mask_geojson": "data-files/arp-boulder-south.geojson",
-                "ranger_district_ids": ["99021001010343"]
+                "ranger_district_ids": [
+                    "99021001010343"
+                ]
             },
             {
                 "title": "ARP Canyon Lakes North",
@@ -24,7 +28,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165781.pdf",
                 "mvum_md5": "bb4929a94faf4b9e3bfc98545bf106c5",
                 "mvum_mask_geojson": "data-files/arp-canyonlakes-north.geojson",
-                "ranger_district_ids": ["99021005010343"]
+                "ranger_district_ids": [
+                    "99021005010343"
+                ]
             },
             {
                 "title": "ARP Canyon Lakes South",
@@ -32,7 +38,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5165761.pdf",
                 "mvum_md5": "b9f55adbfc665ce4df1bbedc83c0a04a",
                 "mvum_mask_geojson": "data-files/arp-canyonlakes-south.geojson",
-                "ranger_district_ids": ["99021005010343"]
+                "ranger_district_ids": [
+                    "99021005010343"
+                ]
             },
             {
                 "title": "ARP Clear Creek",
@@ -40,7 +48,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd570785.pdf",
                 "mvum_md5": "b0e91599bad08b8a0d5fc67cd782332b",
                 "mvum_mask_geojson": "data-files/arp-clear-creek.geojson",
-                "ranger_district_ids": ["99021007010343"]
+                "ranger_district_ids": [
+                    "99021007010343"
+                ]
             },
             {
                 "title": "ARP Pawnee East",
@@ -48,7 +58,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5307750.pdf",
                 "mvum_md5": "2931e0e60c237ecddea232df8899a5ae",
                 "mvum_mask_geojson": "data-files/arp-pawnee-east.geojson",
-                "ranger_district_ids": ["99021006010343"]
+                "ranger_district_ids": [
+                    "99021006010343"
+                ]
             },
             {
                 "title": "ARP Pawnee West",
@@ -56,7 +68,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5307749.pdf",
                 "mvum_md5": "64406b0f925ea2e67180599059dad59b",
                 "mvum_mask_geojson": "data-files/arp-pawnee-west.geojson",
-                "ranger_district_ids": ["99021006010343"]
+                "ranger_district_ids": [
+                    "99021006010343"
+                ]
             },
             {
                 "title": "ARP Sulphur North",
@@ -64,7 +78,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5339604.pdf",
                 "mvum_md5": "83beacf6ebd75a58fa0a8b616d8af021",
                 "mvum_mask_geojson": "data-files/arp-sulphur-north.geojson",
-                "ranger_district_ids": ["99021008010343"]
+                "ranger_district_ids": [
+                    "99021008010343"
+                ]
             },
             {
                 "title": "ARP Sulphur South",
@@ -72,7 +88,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5339603.pdf",
                 "mvum_md5": "14355ea043929fa996a0cc2f0bb1ecc3",
                 "mvum_mask_geojson": "data-files/arp-sulphur-south.geojson",
-                "ranger_district_ids": ["99021008010343"]
+                "ranger_district_ids": [
+                    "99021008010343"
+                ]
             },
             {
                 "title": "GMUG Grand Mesa",
@@ -80,7 +98,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1071681.pdf",
                 "mvum_md5": "9c8e903729899df3c8bfb5561760a8eb",
                 "mvum_mask_geojson": "data-files/gmug-grand-mesa.geojson",
-                "ranger_district_ids": ["99020402010343"]
+                "ranger_district_ids": [
+                    "99020402010343"
+                ]
             },
             {
                 "title": "GMUG Uncompahgre Plateau",
@@ -88,7 +108,10 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511370.pdf",
                 "mvum_md5": "0ea9bd70b1bee8b56b3f8eb305904fe5",
                 "mvum_mask_geojson": "data-files/gmug-plateau.geojson",
-                "ranger_district_ids": ["99020405010343", "99020402010343"]
+                "ranger_district_ids": [
+                    "99020405010343",
+                    "99020402010343"
+                ]
             },
             {
                 "title": "GMUG Uncompahgre Mountain",
@@ -96,7 +119,11 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511371.pdf",
                 "mvum_md5": "ef633922b671303f6b51d9215ebdd7fa",
                 "mvum_mask_geojson": "data-files/gmug-uncompahgre-mtn.geojson",
-                "ranger_district_ids": ["99020406010343", "99020407010343", "99020405010343"]
+                "ranger_district_ids": [
+                    "99020406010343",
+                    "99020407010343",
+                    "99020405010343"
+                ]
             },
             {
                 "title": "GMUG Paonia",
@@ -104,7 +131,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3838524.pdf",
                 "mvum_md5": "f07b5a06669e912e979f26e19a3b4c39",
                 "mvum_mask_geojson": "data-files/gmug-paonia.geojson",
-                "ranger_district_ids": ["99020408010343"]
+                "ranger_district_ids": [
+                    "99020408010343"
+                ]
             },
             {
                 "title": "GMUG Gunnison North",
@@ -112,7 +141,9 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd658615.pdf",
                 "mvum_md5": "e79e72d851471ef7145bf377957b2d3f",
                 "mvum_mask_geojson": "data-files/gmug-gunnison-north.geojson",
-                "ranger_district_ids": ["99020407010343"]
+                "ranger_district_ids": [
+                    "99020407010343"
+                ]
             },
             {
                 "title": "GMUG Gunnison South",
@@ -120,14 +151,109 @@
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd658618.pdf",
                 "mvum_md5": "dda154e320f980b0db8508b21cdd31ba",
                 "mvum_mask_geojson": "data-files/gmug-gunnison-south.geojson",
-                "ranger_district_ids": ["99020407010343"]
+                "ranger_district_ids": [
+                    "99020407010343"
+                ]
+            },
+            {
+                "title": "MBR Snowy Range",
+                "id": "mbr-snowy-range",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3842002.pdf",
+                "mvum_mask_geojson": "data-files/mbr-snowy-range.geojson",
+                "ranger_district_ids": [
+                    "99020602010343",
+                    "99020605010343"
+                ],
+                "mvum_md5": "3e508f8fe6fe5e297cc417db0afe2e7c"
+            },
+            {
+                "title": "MBR Sierra Madre",
+                "id": "mbr-sierra-madre",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3842001.pdf",
+                "mvum_mask_geojson": "data-files/mbr-sierra-madre.geojson",
+                "ranger_district_ids": [
+                    "99020602010343"
+                ],
+                "mvum_md5": "556a3fa7fe6a6c3d498751b112fdb322"
+            },
+            {
+                "title": "MBR Laramie Peak",
+                "id": "mbr-laramie-peak",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1102257.pdf",
+                "mvum_mask_geojson": "data-files/mbr-laramie-peak.geojson",
+                "ranger_district_ids": [
+                    "99020609010343"
+                ],
+                "mvum_md5": "a56f942e601cb63fd4e76d2da925885d"
+            },
+            {
+                "title": "MBR Spring Creek",
+                "id": "mbr-spring-creek",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3842004.pdf",
+                "mvum_mask_geojson": "data-files/mbr-spring-creek.geojson",
+                "ranger_district_ids": [
+                    "99020609010343"
+                ],
+                "mvum_md5": "9786a934180016bbc459ab246dbb02dc"
+            },
+            {
+                "title": "MBR Thunder Basin",
+                "id": "mbr-thunder-basin",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3842003.pdf",
+                "mvum_mask_geojson": "data-files/mbr-thunder-basin.geojson",
+                "ranger_district_ids": [
+                    "99020609010343"
+                ],
+                "mvum_md5": "0eca353b62f28a2a522453510425f0fb"
+            },
+            {
+                "title": "MBR Hahns Peak / Bears Ears",
+                "id": "mbr-hahns-bears",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5166245.pdf",
+                "mvum_mask_geojson": "data-files/mbr-hahns.geojson",
+                "ranger_district_ids": [
+                    "99020603010343"
+                ],
+                "mvum_md5": "475ceeede02be7fc05097a9334794bda"
+            },
+            {
+                "title": "MBR Pole Mountain",
+                "id": "mbr-pole-mountain",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1102258.pdf",
+                "mvum_mask_geojson": "data-files/mbr-pole.geojson",
+                "ranger_district_ids": [
+                    "99020605010343"
+                ],
+                "mvum_md5": "be8902c285d77ec0ca9ed44647f68ca6"
+            },
+            {
+                "title": "MBR Parks",
+                "id": "mbr-parks",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5166251.pdf",
+                "mvum_mask_geojson": "data-files/mbr-parks.geojson",
+                "ranger_district_ids": [
+                    "99020604010343"
+                ],
+                "mvum_md5": "be39c44be4d125aec57ac1045d149f78"
+            },
+            {
+                "title": "MBR Yampa",
+                "id": "mbr-yampa",
+                "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5166250.pdf",
+                "mvum_mask_geojson": "data-files/mbr-yampa.geojson",
+                "ranger_district_ids": [
+                    "99020601010343"
+                ],
+                "mvum_md5": "3be754f8eb85043a4ff626708b294de2"
             },
             {
                 "title": "White River Aspen",
                 "id": "whiteriver-aspen",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025145.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-aspen.geojson",
-                "ranger_district_ids": ["99021501010343"],
+                "ranger_district_ids": [
+                    "99021501010343"
+                ],
                 "mvum_md5": "a24c8c183abc9edb2e7ee830aca71093"
             },
             {
@@ -135,7 +261,9 @@
                 "id": "whiteriver-dillon",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025146.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-dillon.geojson",
-                "ranger_district_ids": ["99021510010343"],
+                "ranger_district_ids": [
+                    "99021510010343"
+                ],
                 "mvum_md5": "757a4efc69988b49e2d59b3daacc6a82"
             },
             {
@@ -143,7 +271,10 @@
                 "id": "whiteriver-eagle-front",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025153.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-eagle-front.geojson",
-                "ranger_district_ids": ["99021507010343", "99021504010343"],
+                "ranger_district_ids": [
+                    "99021507010343",
+                    "99021504010343"
+                ],
                 "mvum_md5": "ff73859eff067c4f413ce6589d4459ab"
             },
             {
@@ -151,7 +282,10 @@
                 "id": "whiteriver-eagle-back",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025147.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-eagle-back.geojson",
-                "ranger_district_ids": ["99021504010343", "99021507010343"],
+                "ranger_district_ids": [
+                    "99021504010343",
+                    "99021507010343"
+                ],
                 "mvum_md5": "807de43245378637b75218ff6c40ad84"
             },
             {
@@ -159,7 +293,11 @@
                 "id": "whiteriver-flattops-front",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025157.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-flattops-front.geojson",
-                "ranger_district_ids": ["99021504010343", "99021508010343", "99021502010343"],
+                "ranger_district_ids": [
+                    "99021504010343",
+                    "99021508010343",
+                    "99021502010343"
+                ],
                 "mvum_md5": "a97bee2f205ec7d3362b68a17850c8ce"
             },
             {
@@ -167,7 +305,9 @@
                 "id": "whiteriver-rifle",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1025158.pdf",
                 "mvum_mask_geojson": "data-files/whiteriver-rifle.geojson",
-                "ranger_district_ids": ["99021508010343"],
+                "ranger_district_ids": [
+                    "99021508010343"
+                ],
                 "mvum_md5": "5a8a6ac0b57eb3e5b35e1d6c8ca823dc"
             }
         ]
