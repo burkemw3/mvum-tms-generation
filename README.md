@@ -22,6 +22,7 @@ These maps are base layer maps, not vector maps. You can set the transparency to
 
 Included Forests
 
+* Arizona's Coconino National Forest
 * Colorado's ARP Arapaho and Roosevelt National Forests and Pawnee National Grassland
 * Colorado's GMUG Grand Mesa, Uncompahgre and Gunnison National Forests
 * Colorado/Wyoming's MBR Medicine Bow-Routt National Forests and Thunder Basin National Grassland

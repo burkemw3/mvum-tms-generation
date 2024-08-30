@@ -93,6 +93,28 @@
                 ]
             },
             {
+                "title": "coconino north",
+                "id": "coconino-north",
+                "mvum_pdf": "https://www.fs.usda.gov/r3/gis/mvum/Coconino/CoconinoCoconinoFront.pdf",
+                "mvum_mask_geojson": "data-files/coconino-north.geojson",
+                "ranger_district_ids": [
+                    "99030408010343"
+                ],
+                "mvum_md5": "4f4d765b4ae3fa7952f15f80c6f99866"
+            },
+            {
+                "title": "coconino south",
+                "id": "coconino-south",
+                "mvum_pdf": "https://www.fs.usda.gov/r3/gis/mvum/Coconino/CoconinoCoconinoBack.pdf",
+                "mvum_mask_geojson": "data-files/coconino-south.geojson",
+                "ranger_district_ids": [
+                    "99030406010343",
+                    "99030407010343",
+                    "99030408010343"
+                ],
+                "mvum_md5": "4d601077f937a9a4538177604ab0f627"
+            },
+            {
                 "title": "GMUG Grand Mesa",
                 "id": "gmug-grand-mesa",
                 "mvum_pdf": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1071681.pdf",
