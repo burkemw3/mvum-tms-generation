@@ -1,13 +1,16 @@
 import argparse
+import glob
 import json
 import os
 # import requests
 import shutil
 import subprocess
+import sys
 
 
 parser = argparse.ArgumentParser("process")
 parser.add_argument("-c", help="Path to config file", type=str, default="config.json")
+parser.add_argument("-i", help="Path to incremental config file", type=str)
 args = parser.parse_args()
 
 f = open(args.c)
@@ -19,8 +22,11 @@ mosaic_file_name = os.path.join(cache_dir, "mosaic.vrt")
 if os.path.isfile(mosaic_file_name):
     os.remove(mosaic_file_name)
 tiles_folder_name = "tiles"
-if os.path.isdir(tiles_folder_name):
+if args.i is None and os.path.isdir(tiles_folder_name):
     shutil.rmtree(tiles_folder_name)
+incremental_tiles_folder_name = "incremental_tiles"
+if args.i is not None and os.path.isdir(incremental_tiles_folder_name):
+    shutil.rmtree(incremental_tiles_folder_name)
 
 # fix ranger geometry, and create indexed-sqlite storage
 ranger_db_filename = os.path.join(cache_dir, "ranger_districts.sqlite")
@@ -32,6 +38,12 @@ subprocess.run(
 subprocess.run(
     ["sqlite3", ranger_db_filename, "CREATE INDEX IF NOT EXISTS idx_rangerdistrictid ON `ranger_district_boundaries_(feature_layer)` (rangerdistrictid);", ".exit"],
     check=True)
+
+if args.i is not None:
+    inc_f = open(args.i)
+    ext_data = data
+    inc_data = json.load(inc_f)
+    data = inc_data
 
 seen_ids = set([])
 files_to_merge = []
@@ -116,5 +128,49 @@ subprocess.run([
     "--xyz",
     "-w", "leaflet",
     mosaic_file_name,
+    tiles_folder_name if args.i is None else incremental_tiles_folder_name
+    ], check=True)
+
+# if not incremental, then exit
+if args.i is None:
+  sys.exit()
+
+# find matching/overlapping tiles. delete them from both.
+existing_tiles = glob.glob("*/*/*.png", root_dir=tiles_folder_name)
+incremental_tiles = glob.glob("*/*/*.png", root_dir=incremental_tiles_folder_name)
+overlapping_tiles = list(set(existing_tiles) & set(incremental_tiles))
+for filepath in overlapping_tiles:
+    os.remove(os.path.join(tiles_folder_name, filepath))
+    os.remove(os.path.join(incremental_tiles_folder_name, filepath))
+# copy remaining incremental tiles to persistent tiles
+remaining_incremental_tiles = glob.glob("*/*/*.png", root_dir=incremental_tiles_folder_name)
+for remaining_tile in remaining_incremental_tiles:
+    shutil.copy2(
+        os.path.join(incremental_tiles_folder_name, remaining_tile),
+        os.path.join(tiles_folder_name, remaining_tile))
+# combine all source files into another mosaic
+print("merging existing and incremental: ", files_to_merge)
+for i in ext_data["input"]["pdfs"]:
+    for ranger_idx, ranger_id in enumerate(i["ranger_district_ids"]):
+        ranger_mask_filename = os.path.join(cache_dir, i["id"] + "-ranger-masked-" + str(ranger_idx) + ".tif")
+        files_to_merge.append(ranger_mask_filename)
+subprocess.run([
+    "gdalbuildvrt",
+    "-resolution", "highest",
+    mosaic_file_name,
+    *files_to_merge
+    ], check=True)
+# re-run gdal2tiles with --resume this time
+print("tiling mising")
+subprocess.run([
+    "gdal2tiles",
+    "--resume",
+    "-z", "8-14",
+    "--exclude",
+    "--processes", "8", # TODO determine processor count?
+    "--xyz",
+    "-w", "leaflet",
+    mosaic_file_name,
     tiles_folder_name
     ], check=True)
+# answer https://gis.stackexchange.com/q/467208

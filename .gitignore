@@ -1,6 +1,7 @@
 cache/
 data-files/Ranger_District_Boundaries_\(Feature_Layer\).geojson
 tiles/
+incremental-tiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
